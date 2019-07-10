@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background: rgb(171,5,52);
+    color: white;
+    box-shadow: 0 2px 2px 0px black;
+    height: 100px;
+}
+
+.header__layout{
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo{
+    display: inline-block;
+    font-size: 48px;
+    color: white;
+    height: 48px;
+}
+
+.header__logo{
+    padding: 26px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu{
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    height: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu a{
+    color: white;
+    padding: 20px;
+}
+
+.header__menu{
+    padding: 40px 0;
+    position: absolute;
+    top: 0;
+    left: 240px;
+}
+
+.header__right-container{
+    display: inline-block;
+    width: 300px;
+    height: 20px;
+    padding: 40px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header__right-container a{
+    color: white;
+}
+
+.header__right-container div{
+    display: inline-block;
+}
+
+.search,
+.shop{
+    padding: 0 20px;
+}
+
+.header__register-login-container{
+    padding-left: 20px;
+}
+
+.register>a,
+.login>a{
+    font-family: 'Open Sans', sans-serif;
+}
