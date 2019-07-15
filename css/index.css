@@ -264,20 +264,21 @@ header{
 
 /* /////////////////////////////////////// */
 
-.top-courses{
+.cards{
     font-family: 'Roboto', sans-serif;
+    padding: 100px 0;
 }
 
 .cards__header{
     display: flex;
     justify-content: space-between;
-    margin: 40px 0;
 }
 
 .cards__container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 100px;
 }
 
 .card{
@@ -321,6 +322,11 @@ header{
 
 .cards__title>h2{
     font-size: 30px;
+    margin-top: 0;
+}
+
+.cards__title>p{
+    margin: 0;
 }
 
 .button-view-more{
@@ -361,6 +367,7 @@ header{
 
 .card__description{
     padding: 30px;
+    box-shadow: 0px 2px 4px -2px rgb(129, 127, 127);
 }
 
 .card:hover .card__description{
@@ -433,12 +440,14 @@ header{
 .popular-courses__title>h2{
     width: 450px;
     font-size: 30px;
+    margin-top: 0;
 }
 
 .popular-courses__title>p{
     width: 370px;
     font-size: 14px;
     line-height: 24px;
+    margin: 0;
 }
 
 .popular-courses__main{
@@ -493,6 +502,33 @@ header{
     z-index: 2;
 }
 
+/* ///////////////////////////////////////// */
 
+.image_word-press{
+    background-image: url("../images/word-press.jpg");
+}
 
+.image_web-development{
+    background-image: url("../images/web-development.jpg");
+}
+
+.image_design{
+    background-image: url("../images/design.jpg");
+    background-position-y: -20px;
+}
+
+.image_hacking{
+    background-image: url("../images/hacking.jpg");
+}
+
+.image_networking{
+    background-image: url("../images/networking.jpg");
+}
+
+.image_digital-marketing{
+    background-image: url("../images/digital-marketing.jpg");
+    background-position-x: -190px;
+}
+
+/* ///////////////////////////// */
 
