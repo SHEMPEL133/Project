@@ -288,6 +288,31 @@ header{
     padding: 0 20px 20px;
 }
 
+.card__image::before{
+    content: "";
+    background: rgba(171,5,52,0.5);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 360px;
+    height: 180px;
+}
+
+.card::before{
+    content: "";
+    display: none;
+    background: white;
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%); 
+    z-index: 3;
+    
+}
+
 .cards__title{
     width: 370px;
     font-size: 14px;
@@ -315,18 +340,22 @@ header{
     height: 180px;
 }
 
-.card__image::before{
+.card::after{
     content: "";
-    background: rgba(171,5,52,0.5);
     display: none;
+    background: white;
+    width: 3px;
+    height: 60px;
     position: absolute;
-    top: 0;
-    left: 20px;
-    width: 360px;
-    height: 180px;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%); 
+    z-index: 3;
 }
 
-.card:hover .card__image::before{
+.card:hover .card__image::before,
+.card:hover:before,
+.card:hover::after{
     display: block;
 }
 
