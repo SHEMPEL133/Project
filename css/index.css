@@ -26,8 +26,7 @@ header{
     z-index: 4;
 }
 
-.header__layout,
-.categories__layout{
+.centred-layout{
     position: relative;
     max-width: 1200px;
     margin: auto;
@@ -263,3 +262,135 @@ header{
     color: rgb(171,5,52);
 }
 
+/* /////////////////////////////////////// */
+
+.top-courses{
+    font-family: 'Roboto', sans-serif;
+}
+
+.cards__header{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.cards__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    width: 360px;
+    overflow: auto;
+    position: relative;
+    margin: 20px 0;
+    padding: 0 20px 20px;
+}
+
+.cards__title{
+    width: 370px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.cards__title>h2{
+    font-size: 30px;
+}
+
+.button-view-more{
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 160px;
+    height: 20px; 
+    text-align: center;
+    align-self: flex-end;
+    color: black;
+    padding: 16px 0;
+}
+
+.card__image{
+    width: 360px;
+    height: 180px;
+}
+
+.card__image::before{
+    content: "";
+    background: rgba(171,5,52,0.5);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 360px;
+    height: 180px;
+}
+
+.card:hover .card__image::before{
+    display: block;
+}
+
+.card__description{
+    padding: 30px;
+}
+
+.card:hover .card__description{
+    box-shadow: 0px 0px 20px -4px rgb(129, 127, 127);
+}
+
+.card__description>p:first-child{
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.cost{
+    color: rgb(171,5,52);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.rating{
+    margin: 0;
+}
+
+.image_photography{
+    background-image: url("../images/photography.jpg");
+    background-size: cover;
+    background-position-y: -20px;
+}
+
+.image_lifestyle{
+    background-image: url("../images/lifestyle.jpg");
+    background-size: cover;
+    background-position-y: -50px;
+}
+
+.image_language{
+    background-image: url("../images/language.jpg");
+    background-size: cover;
+    background-position-y: -50px;
+}
+
+.image_freelance{
+    background-image: url("../images/freelancing.jpg");
+    background-size: cover;
+    background-position-y: -50px;
+}
+
+.image_guitar{
+    background-image: url("../images/guitar.jpg");
+    background-size: cover;
+    background-position-y: -20px;
+}
+
+
+.image_math{
+    background: rgb(237, 241, 247);
+    background-image: url("../images/math.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+/* ////////////////////////////////////////// */
