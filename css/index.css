@@ -327,6 +327,7 @@ header{
 
 .cards__title>p{
     margin: 0;
+    color: rgb(51,51,51);
 }
 
 .button-view-more{
@@ -377,6 +378,7 @@ header{
 .card__description>p:first-child{
     line-height: 24px;
     font-size: 14px;
+    color: rgb(51,51,51);
 }
 
 .cost{
@@ -557,6 +559,7 @@ header{
 .alt-card__description>p{
     line-height: 24px;
     font-size: 14px;
+    color: rgb(51,51,51);
 }
 
 .image_Expand-Skill-Development{
@@ -593,4 +596,153 @@ header{
     background-image: url("../images/Analytics-Work.png");
     background-repeat: no-repeat;
     background-position: center bottom;
+}
+
+/* ///////////////////////////////////// */
+
+.client-appreciation{
+    font-family: 'Roboto', sans-serif;
+    background: rgb(247, 249, 250);
+    padding: 100px 0 50px;
+}
+
+.client-appreciation__title{
+    width: 370px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.client-appreciation__title>h2{
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.client-appreciation__title>p{
+    margin: 0;
+    color: rgb(51,51,51);
+}
+
+.client-appreciation__main{
+    display: flex;
+    margin-top: 80px;
+    box-shadow: 0 2px 0 0 rgb(237, 241, 242);
+}
+
+.client-appreciation__recall{
+    flex-basis: 50%;
+    box-shadow: 2px 0 0 rgb(237, 241, 242);
+    padding-bottom: 100px;
+}
+
+.client-appreciation__text{
+    width: 420px;
+    height: 150px;
+    background-image: url("../images/quotes.png");
+    background-repeat: no-repeat;
+    padding: 34px 36px;
+    color: rgb(51,51,51);
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.client-appreciation__image{
+    float: left;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.client-appreciation__name,
+.client-appreciation__specialty{
+    margin: 0;
+}
+
+.client-appreciation__name{
+    font-size: 16px;
+    padding: 26px 0 10px;
+}
+
+.client-appreciation__specialty{
+    color: rgb(51,51,51);
+    font-size: 13px;
+}
+
+.client-appreciation__video{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+}
+
+.client-appreciation__video>iframe{
+    border: 10px solid rgb(237, 241, 242);
+    border-radius: 10px;
+}
+
+.slider-logo__box{
+    padding: 50px 0; 
+}
+
+.slider-logo__title{
+    color: black;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.slider-logo__main{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.slider-logo__image{
+    width: 200px;
+    margin: auto;
+}
+
+.slick-prev:before,
+.slick-next:before{
+    color: rgb(200, 206, 210);
+    font-size: 50px;
+    opacity: 1;
+    line-height: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '\2039';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '	\203A';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '\203A';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '\2039';
 }
