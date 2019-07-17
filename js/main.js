@@ -7,3 +7,15 @@ $(function () {
         autoplaySpeed: 2000,
     });
 });
+
+$(function () {
+    $('.cards__slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        dots: true,
+        arrows: false,
+    });
+});
