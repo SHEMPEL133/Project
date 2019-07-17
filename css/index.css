@@ -893,5 +893,94 @@ header{
     border-radius: 50px;
 }
 
+/* ///////////////////////////// */
 
+footer{
+    background: rgb(41,38,98);
+    color: white;
+    padding: 50px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer__centred-layout{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto;
+}
+
+.footer__start{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    box-shadow: 0 1px 0 0 rgb(73, 70, 121);
+}
+
+.contacts{
+    width: 250px;
+}
+
+.phone{
+    font-size: 18px;
+}
+
+.title-bold{
+    font-weight: 600;
+}
+
+.help-center,
+.about-us,
+.tools,
+.get-in-touch{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.communication a,
+.address p,
+.help-center a,
+.about-us a,
+.tools a,
+.get-in-touch a{
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.address p{
+    line-height: 26px;
+}
+
+.email a,
+.website a{
+    display: inline-block;
+}
+
+.footer__end{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.social-network>a{
+    color: white;
+    font-size: 16px;
+}
+
+.icon-facebook2::before,
+.icon-twitter::before,
+.icon-instagram::before,
+.icon-linkedin::before,
+.icon-google-plus3::before{
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+.copyright>span{
+    font-size: 14px;
+}
 
