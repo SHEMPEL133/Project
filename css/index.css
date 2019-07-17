@@ -829,3 +829,69 @@ header{
     content: "";
     padding: 5px;
 }
+
+/* /////////////////////////////////// */
+
+@keyframes black-and-white{
+    0%{
+        filter: grayscale(100%);
+    }
+
+    100%{
+        filter: grayscale(0);
+    }
+}
+
+.instructor{
+    font-family: 'Roboto', sans-serif;
+    padding: 50px 0;
+    background-image: url(../images/instructor.jpg);
+    background-position: -300px -520px;
+    /* animation: black-and-white 1s 1 linear;
+    filter: grayscale(100%);
+    animation-play-state: paused; */
+}
+
+/* .instructor:hover{
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+} */
+
+.instructor__title{
+    text-align: center;
+    font-family: monospace;
+    font-size: 36px;
+}
+
+.instructor__main{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: 680px;
+    height: 70px;
+    border-radius: 50px;
+    margin: 50px auto;
+}
+
+.instructor__text{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.button-join{
+    display: flex;
+    background: rgb(171,5,52);
+    color: white;
+    height: 100%;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold; 
+    letter-spacing: 2px;
+    border-radius: 50px;
+}
+
+
+
