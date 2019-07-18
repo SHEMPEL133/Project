@@ -119,8 +119,6 @@ input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
 input::-webkit-search-results-decoration { display: none; }
 
-
-
 .header__register-login-container{
     padding-left: 20px;
 }
@@ -168,6 +166,11 @@ input::-webkit-search-results-decoration { display: none; }
     text-align: center;
     border-radius: 28px;
     padding: 18px 0;
+}
+
+.slider_button:hover{
+    background: white;
+    color: rgb(171,5,52);
 }
 
 .slider__image{
@@ -324,6 +327,8 @@ input::-webkit-search-results-decoration { display: none; }
     position: relative;
     margin: 20px 0;
     padding: 0 20px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card__image::before{
@@ -379,6 +384,11 @@ input::-webkit-search-results-decoration { display: none; }
     padding: 16px 0;
 }
 
+.button-view-more:hover{
+    background: rgb(171,5,52);
+    color: white;
+}
+
 .card__image{
     width: 360px;
     height: 180px;
@@ -406,6 +416,8 @@ input::-webkit-search-results-decoration { display: none; }
 .card__description{
     padding: 30px;
     box-shadow: 0px 2px 4px -2px rgb(129, 127, 127);
+    min-height: 240px;
+    flex-grow: 2;
 }
 
 .card:hover .card__description{
@@ -501,7 +513,7 @@ input::-webkit-search-results-decoration { display: none; }
 }
 
 .top-rated-course{
-    background: rgb(199,22,111);
+    background: rgb(219, 28, 124);
 }
 
 .top-rated-course:hover{
@@ -547,6 +559,10 @@ input::-webkit-search-results-decoration { display: none; }
 }
 
 /* ///////////////////////////////////////// */
+
+.best-sellers-course{
+    box-shadow: 0 2px 0 0 rgb(229, 229, 229);
+}
 
 .image_word-press{
     background-image: url("../images/word-press.jpg");
@@ -737,6 +753,10 @@ input::-webkit-search-results-decoration { display: none; }
     max-width: 1200px;
     margin: auto;
     margin-top: 50px;
+}
+
+.slider-logo__link{
+    outline: none;
 }
 
 .slider-logo__image{
