@@ -426,6 +426,7 @@ input::-webkit-search-results-decoration { display: none; }
 
 .card__title{
     line-height: 1.25;
+    color: black;
 }
 
 .card__text{
@@ -444,6 +445,14 @@ input::-webkit-search-results-decoration { display: none; }
 
 .rating{
     margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    color: rgb(237, 128, 0);
+}
+
+.rating__input{
+    display: none;
 }
 
 .image_photography{
