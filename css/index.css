@@ -23,15 +23,19 @@ header{
     height: 100px;
     width: 100%;
     z-index: 4;
+    display: flex;
 }
+
 
 .header__centred-layout{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     max-width: 1200px;
+    width: 100%;
     padding: 0 20px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .centred-layout{
@@ -49,13 +53,23 @@ header{
 }
 
 .header__logo{
-    padding: 26px 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.header__container{
+    display: flex;
+    height: 100%;
+    flex-grow: 5;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu{
     display: flex;
     height: 20px;
-    /* flex: 2; */
 }
 
 .menu li{
@@ -68,27 +82,27 @@ header{
     padding: 20px;
 }
 
-.header__menu{
-}
-
 .header__right-container{
     display: flex;
-    /* flex: 1; */
-    flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
 .header__right-container a{
     color: white;
 }
 
+.register::after{
+    content: "Register";
+}
+
+.login::after{
+    content: "Login";
+}
+
 .shop{
-    /* display: inline-block; */
     padding: 0 20px;
 }
 
 .search-form{
-    /* display: inline-block; */
     position: relative;
 }
 
@@ -115,7 +129,7 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration { display: none; }
 
 .header__register-login-container{
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 
 .icon-sign-in::before,
@@ -395,6 +409,8 @@ input::-webkit-search-results-decoration { display: none; }
 }
 
 .card__image{
+    outline: none;
+    display: block;
     max-width: 360px;
     height: 180px;
     max-height: 180px;
@@ -723,7 +739,6 @@ input::-webkit-search-results-decoration { display: none; }
 
 .client-appreciation__text{
     max-width: 420px;
-    /* height: 150px; */
     background-image: url("../images/quotes.png");
     background-repeat: no-repeat;
     padding: 34px 36px;
@@ -758,6 +773,7 @@ input::-webkit-search-results-decoration { display: none; }
 .client-appreciation__video{
     display: flex;
     flex-basis: 50%;
+    height: 100%;
     justify-content: flex-end;
     padding-bottom: 100px;
     padding-left: 20px;
@@ -847,6 +863,11 @@ input::-webkit-search-results-decoration { display: none; }
 
 .card__slider{
     margin: 20px;
+    outline: none;
+}
+
+.card__slider .card__title{
+    height: 60px;
 }
 
 .card__slider:hover{
@@ -975,8 +996,22 @@ input::-webkit-search-results-decoration { display: none; }
 
 .instructor__text{
     display: flex;
+    width: 100%;
     align-items: center;
     padding-left: 60px;
+    padding-right: 20px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+}
+
+.instructor__text:focus,
+.instructor__main:focus-within{
+    color: black;
+}
+
+.instructor__main:focus-within{
+    box-shadow: 0 0 5px black;
 }
 
 .button-join{
@@ -991,7 +1026,15 @@ input::-webkit-search-results-decoration { display: none; }
     font-weight: bold; 
     letter-spacing: 2px;
     border-radius: 50px;
+    outline: none;
+    border: none;
 }
+
+.button-join:active{
+    background: rgb(134, 4, 41);
+}
+
+
 
 /* ///////////////////////////// */
 
@@ -1104,6 +1147,10 @@ footer{
 
 @media all and (max-width: 1200px){
 
+    .menu a{
+        padding: 15px;
+    }
+
     .categories__cell{
         margin: 10px;
     }
@@ -1130,13 +1177,17 @@ footer{
     }
 
     .client-appreciation__video>iframe{
-    /* width: 355px; */
-    /* height: 180px; */
     width: 100%;
     }
 }
 
 @media all and (max-width: 1024px){
+
+    .header__container{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
 
     .cards__container{
         justify-content: space-around;
@@ -1181,12 +1232,12 @@ footer{
         background-position: 0;
     }
 
-    .card__slider .card__image{
+    .card__slider .card__image,
+    .card__slider .card__image::before{
         max-width: 100%;
         max-height: 220px;
         height: 220px;
     }
-
 }
 
 @media all and (max-width: 800px){
@@ -1213,6 +1264,14 @@ footer{
 
     .cards__container{
         padding-top: 50px;
+    }
+
+    .card{
+        margin: 20px 10px;
+    }
+
+    .alt-card{
+        margin: 20px 10px;
     }
     
     .popular-courses{
@@ -1299,15 +1358,96 @@ footer{
         flex-wrap: wrap;
     }
 
-    .card__slider .card__image{
+    .card__slider .card__image,
+    .card__slider .card__image::before{
         max-width: 100%;
         max-height: 180px;
         height: 180px;
     }
-
 }
 
 @media all and (max-width: 768px){
+
+    .header__centred-layout{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .header__logo{
+        font-size: 32px;
+    }
+
+    .header__container{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu{
+        position: relative;
+        padding: 10px;
+        padding-left: 0;
+        flex-grow: 1;
+    }
+
+    .menu a{
+        padding: 0;
+    }
+
+    .menu>ul{
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        background: rgb(171,5,52);
+        display: none;
+    }
+
+    .menu>ul>li{
+        width: 90px;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(41,38,98);;
+        text-align: start;
+        position: relative;
+    }
+
+    .header__menu::before{
+        content: "Menu\23F7";
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 1.4px;
+    }
+
+    .menu:hover>ul{
+        display: block;
+    }
+
+    .menu>ul>li:hover a::before{
+        content: "";
+        display: block;
+        height: 100%;
+        width: 6px;
+        background: rgb(41,38,98);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .header__right-container{
+        flex-grow: 5;
+    }
+
+    .search-form{
+        flex-grow: 3;
+    }
+
+    .search-input{
+        width: 100%;
+    }
+
+    .header__register-login-container{
+        display: flex;
+    }
 
     .slider-logo__box{
         padding: 20px;
@@ -1326,13 +1466,12 @@ footer{
     .contacts{
         display: flex;
         flex-direction: row;
-        /* align-items: center; */
         width: 100%;
         margin-bottom: 10px;
     }
 
     .address{
-        margin-right: 10px;
+        margin-right: 20px;
     }
 
     .help-center,
@@ -1340,11 +1479,27 @@ footer{
     .tools,
     .get-in-touch{
         display: flex;
-        margin: 20px 0;
+        margin: 20px 10px;
     }
 }
 
 @media all and (max-width: 480px){
+
+    .menu>ul>li{
+        width: 60px;
+    }
+
+    .shop{
+        padding: 0 10px;
+    }
+
+    .register::after{
+        content: "";
+    }
+    
+    .login::after{
+        content: "";
+    }
 
     .slider__title{
         font-size: 34px;
@@ -1369,7 +1524,6 @@ footer{
         padding-bottom: 40px;
     }
 
-
     .cards__header{
         flex-direction: column;
     }
@@ -1380,7 +1534,11 @@ footer{
     
     .button-view-more{
         align-self: center;
+        font-size: 14px;
         margin-top: 20px;
+        height: 14px;
+        width: 120px;
+        padding: 10px 0;
     }
 
     .cards{
@@ -1389,6 +1547,15 @@ footer{
 
     .cards__container{
         padding-top: 20px;
+    }
+
+    .card,
+    .alt-card{
+        margin: 20px 0;
+    }
+
+    .card__slider{
+        margin: 10px;
     }
 
     .popular-courses{
@@ -1431,8 +1598,8 @@ footer{
         margin: auto;
     }
 
-    .client-appreciation__video iframe{
-        height: 200px;
+    .client-appreciation__video>iframe{
+        height: 180px;
     }
 
     .slick-dots li button:before{
@@ -1457,6 +1624,10 @@ footer{
 
     .instructor__text{
         padding-left: 20px;
+    }
+
+    .button-join{
+        font-size: 12px;
     }
 
     .button-join{
@@ -1509,7 +1680,7 @@ footer{
     }
 
     .card__description{
-        padding: 20px;
+        padding: 20px 20px 30px;
     }
 
     .alt-card{
@@ -1524,15 +1695,10 @@ footer{
         padding: 0 20px 20px;
     }
 
-}
-
-@media all and (max-width: 320px){
-
     .client-appreciation__video{
         padding-left: 20px;
     }
+}
 
-    .client-appreciation__video iframe{
-        height: 100%;
-    }   
+@media all and (max-width: 320px){
 }
