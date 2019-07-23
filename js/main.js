@@ -58,4 +58,17 @@ $(function () {
     });
 });
 
+$(function () {
+    $('.client-appreciation__slider').slick({
+        vertical: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: false,
+        dots: true,
+    });
+});
+
 
