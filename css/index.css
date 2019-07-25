@@ -1018,6 +1018,7 @@ input::-webkit-search-results-decoration { display: none; }
 }
 
 .button-join{
+    cursor: pointer;
     display: flex;
     background: rgb(171,5,52);
     color: white;
@@ -1037,8 +1038,6 @@ input::-webkit-search-results-decoration { display: none; }
     background: rgb(134, 4, 41);
 }
 
-
-
 /* ///////////////////////////// */
 
 footer{
@@ -1046,6 +1045,10 @@ footer{
     color: white;
     padding: 50px 0;
     font-family: 'Roboto', sans-serif;
+}
+
+.footer__start a:hover{
+    text-decoration: underline;
 }
 
 .footer__centred-layout{
